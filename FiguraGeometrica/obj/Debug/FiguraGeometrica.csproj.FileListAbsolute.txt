@@ -1,0 +1,10 @@
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\obj\Debug\FiguraGeometrica.csproj.AssemblyReference.cache
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\obj\Debug\FiguraGeometrica.Form1.resources
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\obj\Debug\FiguraGeometrica.Properties.Resources.resources
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\obj\Debug\FiguraGeometrica.csproj.GenerateResource.cache
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\obj\Debug\FiguraGeometrica.csproj.CoreCompileInputs.cache
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\bin\Debug\FiguraGeometrica.exe.config
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\bin\Debug\FiguraGeometrica.exe
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\bin\Debug\FiguraGeometrica.pdb
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\obj\Debug\FiguraGeometrica.exe
+C:\Users\mezal\OneDrive\Escritorio\POO2\Cajero ATM\FiguraGeometrica\obj\Debug\FiguraGeometrica.pdb
