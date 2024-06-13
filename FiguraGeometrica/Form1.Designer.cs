@@ -90,6 +90,7 @@
             this.button7.TabIndex = 17;
             this.button7.Text = "Calcular";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -186,6 +187,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "Informacion";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -195,6 +197,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Exportar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -268,6 +271,7 @@
             // 
             // informacion
             // 
+            this.informacion.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.informacion.Location = new System.Drawing.Point(433, 387);
             this.informacion.Name = "informacion";
             this.informacion.Size = new System.Drawing.Size(440, 395);

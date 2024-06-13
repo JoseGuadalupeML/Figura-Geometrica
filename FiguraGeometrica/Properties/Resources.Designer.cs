@@ -153,6 +153,16 @@ namespace FiguraGeometrica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap prisma {
+            get {
+                object obj = ResourceManager.GetObject("prisma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rectangulo {
             get {
                 object obj = ResourceManager.GetObject("rectangulo", resourceCulture);
