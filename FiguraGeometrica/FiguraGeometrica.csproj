@@ -126,5 +126,8 @@
   <ItemGroup>
     <None Include="Resources\prisma.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

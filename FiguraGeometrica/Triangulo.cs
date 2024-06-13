@@ -8,8 +8,8 @@ namespace FiguraGeometrica
 {
     class Triangulo : Figura
     {
-        private float baseT;
-        public float BaseT
+        private float BaseT;
+        public float baseT
         {
             //Modificador para poner el valor en la caja de memoria
 
@@ -18,17 +18,17 @@ namespace FiguraGeometrica
                 //pregunta si el lado <0
                 if (value < 0)
                 {
-                    BaseT = 0; //manda el valor a 0
+                    baseT = 0; //manda el valor a 0
                 } //No existen lados negativos
                 else
                 {
-                    BaseT = value;
+                    baseT = value;
                     //value es el valor del textbox
                 }
             }
             get //obtener el valor
             {
-                return BaseT; //regresa o cacha el valor de la variable lado1
+                return baseT; //regresa o cacha el valor de la variable lado1
             }
         }
         public Triangulo(float lado1,float BaseT)

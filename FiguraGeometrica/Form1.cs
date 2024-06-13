@@ -58,7 +58,7 @@ namespace FiguraGeometrica
             }
             else if (radioButton5.Checked)
             {
-
+                Datos.Image = Properties.Resources.descarga;
             }
             else if (radioButton6.Checked)
             {
@@ -136,15 +136,30 @@ namespace FiguraGeometrica
             }
             else if (radioButton2.Checked)
             {
-                informacion.Text = "Figura seleccionada Triangulo, " + "\n" + "Sus datos son:" + "\n" + textBox1.Text;
+                string cadena = textBox1.Text;
+                string[] parte = cadena.Split(',');
+                float uno = Convert.ToSingle(parte[0]);
+                float dos = Convert.ToSingle(parte[1]);
+                informacion.Text = "Figura seleccionada Triangulo, " + "\n" + "Sus datos son:" + "\n" + "Lado: " + uno + "\n" + "Base: " + dos;
             }
             else if (radioButton3.Checked)
             {
-                informacion.Text = "Figura seleccionada Rectangulo, " + "\n" + "Sus datos son:" + "\n" + textBox1.Text;
+                string cadena = textBox1.Text;
+                char delimitador = ',';
+                string[] parte = cadena.Split(delimitador);
+                float uno = Convert.ToSingle(parte[0]);
+                float dos = Convert.ToSingle(parte[1]);
+                informacion.Text = "Figura seleccionada Rectangulo, " + "\n" + "Sus datos son:" + "\n" + "Base: " + uno + "\n" + "Altura: " + dos;
             }
             else if (radioButton4.Checked)
             {
-                informacion.Text = "Figura seleccionada Poligono Regular, " + "\n" + "Sus datos son:" + "\n" + textBox1.Text;
+                string cadena = textBox1.Text;
+                char delimitador = ',';
+                string[] parte = cadena.Split(delimitador);
+                float uno = Convert.ToSingle(parte[0]);
+                float dos = Convert.ToSingle(parte[1]);
+                float tres = Convert.ToSingle(parte[2]);
+                informacion.Text = "Figura seleccionada Poligono Regular, " + "\n" + "Sus datos son:" + "\n" + "Lado: " + uno + "\n" + "Apotema: " + dos + "\n" + "Numero de lados: " + tres ;
             }
             else if (radioButton5.Checked)
             {
@@ -152,19 +167,25 @@ namespace FiguraGeometrica
             }
             else if (radioButton6.Checked)
             {
-                informacion.Text = "Figura seleccionada Circulo, " + "\n" + "Sus datos son:" + "\n" + textBox1.Text;
+                informacion.Text = "Figura seleccionada Circulo, " + "\n" + "Sus datos son:" + "\n" + "radio: " + textBox1.Text;
             }
             else if (radioButton7.Checked)
             {
-                informacion.Text = "Figura seleccionada Cubo, " + "\n" + "Sus datos son:" + "\n" + textBox1.Text;
+                informacion.Text = "Figura seleccionada Cubo, " + "\n" + "Sus datos son:" + "\n" + "Arista: " +textBox1.Text;
             }
             else if (radioButton8.Checked)
             {
-                informacion.Text = "Figura seleccionada Prisma, " + "\n" + "Sus datos son:" + "\n" + textBox1.Text;
+                string cadena = textBox1.Text;
+                char delimitador = ',';
+                string[] parte = cadena.Split(delimitador);
+                float uno = Convert.ToSingle(parte[0]);
+                float dos = Convert.ToSingle(parte[1]);
+                float tre = Convert.ToSingle(parte[2]);
+                informacion.Text = "Figura seleccionada Prisma, " + "\n" + "Sus datos son:" + "\n" + "Lado1: " + uno + "\n" + "Lado2: " + dos + "\n" + "lado 3" + tre;
             }
             else if (radioButton9.Checked)
             {
-                informacion.Text = "Figura seleccionada Esfera, " + "\n" + "Sus datos son:" + "\n" + textBox1.Text;
+                informacion.Text = "Figura seleccionada Esfera, " + "\n" + "Sus datos son:" + "\n" + "Radio" + textBox1.Text;
             }
         }
 
@@ -172,19 +193,39 @@ namespace FiguraGeometrica
         {
             if (radioButton1.Checked)
             {
-                informacion.Text = informacion.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
+                float lado = Convert.ToSingle(textBox1.Text);
+                Cuadrado cuadra = new Cuadrado(lado);
+                informacion.Text = informacion.Text + "\n" + "Area= "+ cuadra.area() + "\n" + "Perimetro= "+ cuadra.perimetro() + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
             }
             else if (radioButton2.Checked)
             {
-                informacion.Text = informacion.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
+                string cadena = textBox1.Text;
+                string[] parte = cadena.Split(',');
+                float uno = Convert.ToSingle(parte[0]);
+                float dos = Convert.ToSingle(parte[1]);
+                Triangulo trian = new Triangulo(uno,dos);
+                informacion.Text = informacion.Text + "\n" + "Area= " + trian.area() +  "\n" + "Perimetro= " + trian.perimetro() + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
             }
             else if (radioButton3.Checked)
             {
-                informacion.Text = informacion.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
+                string cadena = textBox1.Text;
+                char delimitador = ',';
+                string[] parte = cadena.Split(delimitador);
+                float uno = Convert.ToSingle(parte[0]);
+                float dos = Convert.ToSingle(parte[1]);
+                Rectangulo rectan = new Rectangulo(uno,dos);
+                informacion.Text = informacion.Text + "\n" + "Area= " + rectan.area() + "\n" + "Perimetro= " + rectan.perimetro() + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
             }
             else if (radioButton4.Checked)
             {
-                informacion.Text = informacion.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
+                string cadena = textBox1.Text;
+                char delimitador = ',';
+                string[] parte = cadena.Split(delimitador);
+                float uno = Convert.ToSingle(parte[0]);
+                float dos = Convert.ToSingle(parte[1]);
+                float tres = Convert.ToSingle(parte[2]);
+                PoligonoReg polireg = new PoligonoReg(uno,dos,tres);
+                informacion.Text = informacion.Text + "\n" + "Area= " + polireg.area() + "\n" + "Perimetro= " + polireg.perimetro() + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
             }
             else if (radioButton5.Checked)
             {
@@ -192,19 +233,35 @@ namespace FiguraGeometrica
             }
             else if (radioButton6.Checked)
             {
-                informacion.Text = informacion.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
+                float rad = Convert.ToSingle(textBox1.Text);
+                Circulo circu = new Circulo(rad);
+                informacion.Text = informacion.Text + "\n" + "Area= " + circu.area() + "\n" + "Perimetro= " + circu.perimetro() + "\n" + "Volumen, no se calcula en figuras planas" + "\n";
             }
             else if (radioButton7.Checked)
             {
-                informacion.Text = informacion.Text + "\n" + "Area= " + "\n" + "Perimetro no definido" + "\n" + "Volumen= ";
+                string cadena = textBox1.Text;
+                char delimitador = ',';
+                string[] parte = cadena.Split(delimitador);
+                float uno = Convert.ToSingle(parte[0]);
+                Cubo cubo = new Cubo(uno);
+                informacion.Text = informacion.Text + "\n" + "Area= " + cubo.area() + "\n" + "Perimetro no definido" + "\n" + "Volumen= " + cubo.volumen();
             }
             else if (radioButton8.Checked)
             {
-                informacion.Text = informacion.Text + "\n" + "Area= " + "\n" + "Perimetro no definido" + "\n" + "Volumen= ";
+                string cadena = textBox1.Text;
+                char delimitador = ',';
+                string[] parte = cadena.Split(delimitador);
+                float uno = Convert.ToSingle(parte[0]);
+                float dos = Convert.ToSingle(parte[1]);
+                float tre = Convert.ToSingle(parte[2]);
+                Prisma prism = new Prisma(uno, dos,tre);
+                informacion.Text = informacion.Text + "\n" + "Area= " + prism.area() + "\n" + "Perimetro no definido" + "\n" + "Volumen= " + prism.perimetro();
             }
             else if (radioButton9.Checked)
             {
-                informacion.Text = informacion.Text + "\n" + "Area= " + "\n" + "Perimetro no definido" + "\n" + "Volumen= ";
+                float rad = Convert.ToSingle(textBox1.Text);
+                Esfera circu = new Esfera(rad);
+                informacion.Text = informacion.Text + "\n" + "Area= " + circu.area() + "\n" + "Perimetro no definido" + "\n" + "Volumen= " + circu.volumen();
             }
         }
     }
